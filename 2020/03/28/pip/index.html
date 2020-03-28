@@ -6,7 +6,7 @@
 
 
   
-  <title>Pyinstaller | Cheeatsheets of Mahoo</title>
+  <title>pip | Cheeatsheets of Mahoo</title>
   
     <link rel="icon" href="/img/favicon.min.webp">
   
@@ -37,18 +37,19 @@
   <div id="container">
     <div id="wrap">
       <div class="outer">
-        <section id="main"><article id="post-Python" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-pip" class="article article-type-post" itemscope itemprop="blogPost">
   <div class='body-area'>
     <header class='main-heading -center' role='banner'>
-      <h1 class='h1'> Pyinstaller <em>3.5</em></h1>
+      <h1 class='h1'> pip <em>all</em></h1>
     </header>
   
   
     <main class='post-content MarkdownBody' data-js-main-body data-js-anchors role='main'>
-      <h2 id="get-started"><a href="#get-started" class="headerlink" title="get started"></a>get started</h2><h2 id="Generate"><a href="#Generate" class="headerlink" title="Generate"></a>Generate</h2><h3 id="one-folder"><a href="#one-folder" class="headerlink" title="one-folder"></a>one-folder</h3><pre class="line-numbers language-bash"><code class="language-bash">pyinstaller -D test.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="one-file"><a href="#one-file" class="headerlink" title="one-file"></a>one-file</h3><pre class="line-numbers language-bash"><code class="language-bash">pyinstaller -F test.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="icon"><a href="#icon" class="headerlink" title="icon"></a>icon</h3><pre class="line-numbers language-bash"><code class="language-bash">pyinstaller -i icon.ico test.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="Bundle"><a href="#Bundle" class="headerlink" title="Bundle"></a>Bundle</h2>
+      <h2 id="get-started"><a href="#get-started" class="headerlink" title="get started"></a>get started</h2><h3 id="upgrade"><a href="#upgrade" class="headerlink" title="upgrade"></a>upgrade</h3><pre class="line-numbers language-shell"><code class="language-shell"># 升级某一个包
+pip install --upgrade Django<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="check"><a href="#check" class="headerlink" title="check"></a>check</h3><pre class="line-numbers language-shell"><code class="language-shell"># 查看可升级的包
+pip list --outdated<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
     </main>
   </div>
   
