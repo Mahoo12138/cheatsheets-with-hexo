@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 6.3.0"></head>
 
 <body>
   
@@ -29,7 +29,7 @@
     <div class='actions'>
   <ul class='page-actions'>
     <li class='link github -button hint--bottom' data-hint='Contribute to the theme'>
-      <a href='https://github.com/glazec/hexo-cheatsheets' target="_blank" rel="noopener">
+      <a target="_blank" rel="noopener" href='https://github.com/glazec/hexo-cheatsheets'>
         <span class='text -visible'>Contribute to the theme</span>
       </a>
     </li>
@@ -59,13 +59,17 @@
       data-js-anchors
       role="main"
     >
-      <div class="h2-section"><h2 id="get-started"><a href="#get-started" class="headerlink local-anchor anchor" title="get started">#</a>get started</h2><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h3-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h3-section"><h3 id="&#x7AEF;&#x53E3;&#x5360;&#x7528;"><a href="#&#x7AEF;&#x53E3;&#x5360;&#x7528;" class="headerlink" title="&#x7AEF;&#x53E3;&#x5360;&#x7528;"></a>&#x7AEF;&#x53E3;&#x5360;&#x7528;</h3><div class="body"><pre class="line-numbers language-shell"><code class="language-shell">netstat -ano                # &#x67E5;&#x770B;&#x6240;&#x6709;&#x7AEF;&#x53E3;&#x5360;&#x7528;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+      <div class="h2-section"><h2 id="get-started"><a href="#get-started" class="headerlink local-anchor anchor" title="get started">#</a>get started</h2><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h3-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h3-section"><h3 id="&#x7AEF;&#x53E3;&#x5360;&#x7528;"><a href="#&#x7AEF;&#x53E3;&#x5360;&#x7528;" class="headerlink" title="&#x7AEF;&#x53E3;&#x5360;&#x7528;"></a>&#x7AEF;&#x53E3;&#x5360;&#x7528;</h3><div class="body"><pre class="line-numbers language-shell"><code class="language-shell">netstat -ano				# &#x67E5;&#x770B;&#x6240;&#x6709;&#x7AEF;&#x53E3;&#x5360;&#x7528;
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-shell"><code class="language-shell">netstat -ano|findstr 3306   # &#x67E5;&#x770B;&#x5177;&#x4F53;&#x7AEF;&#x53E3;&#x5360;&#x7528;
-tasklist|findstr 12138      # &#x6839;&#x636E;PID&#x67E5;&#x770B;&#x5360;&#x7528;&#x7A0B;&#x5E8F;
-taskkill /f /pid 12138      # &#x6839;&#x636E;PID&#x6740;&#x6B7B;&#x5360;&#x7528;&#x7A0B;&#x5E8F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-</div></div><div class="h3-section"><h3 id="IP-&#x626B;&#x63CF;"><a href="#IP-&#x626B;&#x63CF;" class="headerlink" title="IP &#x626B;&#x63CF;"></a>IP &#x626B;&#x63CF;</h3><div class="body"><pre class="line-numbers language-powershell"><code class="language-powershell">arp <span class="token operator">-</span>a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</div></div><div class="h3-section"><h3 id="DNS-&#x76F8;&#x5173;"><a href="#DNS-&#x76F8;&#x5173;" class="headerlink" title="DNS &#x76F8;&#x5173;"></a>DNS &#x76F8;&#x5173;</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash">ipconfig /flushdns        <span class="token comment" spellcheck="true"># &#x6E05;&#x9664; DNS &#x7F13;&#x5B58;</span>
-ipconfig /displaydns    <span class="token comment" spellcheck="true"># &#x67E5;&#x770B;&#x6E05;&#x9664;&#x8BB0;&#x5F55;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+tasklist|findstr 12138	  # &#x6839;&#x636E;PID&#x67E5;&#x770B;&#x5360;&#x7528;&#x7A0B;&#x5E8F;
+taskkill /f /pid 12138	  # &#x6839;&#x636E;PID&#x6740;&#x6B7B;&#x5360;&#x7528;&#x7A0B;&#x5E8F;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</div></div><div class="h3-section"><h3 id="IP-&#x626B;&#x63CF;"><a href="#IP-&#x626B;&#x63CF;" class="headerlink" title="IP &#x626B;&#x63CF;"></a>IP &#x626B;&#x63CF;</h3><div class="body"><pre class="line-numbers language-powershell"><code class="language-powershell">arp <span class="token operator">-</span>a
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</div></div><div class="h3-section"><h3 id="DNS-&#x76F8;&#x5173;"><a href="#DNS-&#x76F8;&#x5173;" class="headerlink" title="DNS &#x76F8;&#x5173;"></a>DNS &#x76F8;&#x5173;</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash">ipconfig /flushdns		<span class="token comment" spellcheck="true"># &#x6E05;&#x9664; DNS &#x7F13;&#x5B58;</span>
+ipconfig /displaydns	<span class="token comment" spellcheck="true"># &#x67E5;&#x770B;&#x6E05;&#x9664;&#x8BB0;&#x5F55;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 </div></div><div class="h3-section"><h3 id="&#x6587;&#x4EF6;&#x6811;"><a href="#&#x6587;&#x4EF6;&#x6811;" class="headerlink" title="&#x6587;&#x4EF6;&#x6811;"></a>&#x6587;&#x4EF6;&#x6811;</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x547D;&#x4EE4;&#x63D0;&#x793A;</span>
 tree /?
 
@@ -74,10 +78,11 @@ tree
 
 <span class="token comment" spellcheck="true"># &#x9012;&#x5F52;&#x663E;&#x793A;&#x76EE;&#x5F55;&#x7ED3;&#x6784;(&#x663E;&#x793A;&#x6587;&#x4EF6;&#xFF0C;&#x5E38;&#x7528;&#x4E8E;&#x9879;&#x76EE;&#x8BF4;&#x660E;)</span>
 tree /F
-
+ 
 <span class="token comment" spellcheck="true"># &#x5C06;&#x663E;&#x793A;&#x7684;&#x5185;&#x5BB9;&#x91CD;&#x5B9A;&#x5411;&#x5230;txt</span>
 tree <span class="token operator">&gt;</span> info.txt
-tree /F <span class="token operator">&gt;</span> info.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+tree /F <span class="token operator">&gt;</span> info.txt
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </div></div></div></div>
     </main>
   </div>
