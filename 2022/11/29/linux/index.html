@@ -8,7 +8,7 @@
 
 
   
-  <title>Cheatsheets of Mahoo</title>
+  <title>Linux 基础命令 | Cheatsheets of Mahoo</title>
   
     <link rel="icon" href="/img/favicon.min.webp">
   
@@ -43,14 +43,14 @@
     <div id="wrap">
       <div class="outer">
         <section id="main"><article
-  id="post-vscode"
+  id="post-linux"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
 >
   <div class="body-area">
     <header class="main-heading -center" role="banner">
-      <h1 class="h1"> <em>  </em></h1>
+      <h1 class="h1">Linux 基础命令 <em> all </em></h1>
     </header>
 
     <main
@@ -59,9 +59,11 @@
       data-js-anchors
       role="main"
     >
-      <div class="h2-section"><h2 id="get-started"><a href="#get-started" class="headerlink local-anchor anchor" title="get started">#</a>get started</h2></div><div class="h2-section"><h2 id="title"><a href="#title" class="headerlink local-anchor anchor" title="title">#</a>title</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">test</span> <span class="token operator">&gt;</span><span class="token operator">&lt;</span> <span class="token operator">&gt;&gt;</span><span class="token operator">&lt;&lt;</span> <span class="token operator">&lt;</span>name<span class="token operator">&gt;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</div>
+      <div class="h2-section"><h2 id="get-started"><a href="#get-started" class="headerlink local-anchor anchor" title="get started">#</a>get started</h2><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h3-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h3-section"><h3 id="get-owner-of-file"><a href="#get-owner-of-file" class="headerlink" title="get owner of file"></a>get owner of file</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash">USER<span class="token operator">=</span><span class="token punctuation">$(</span>stat -c <span class="token string">&apos;%U&apos;</span> /path/to/your/file<span class="token punctuation">)</span>
+GROUP<span class="token operator">=</span><span class="token punctuation">$(</span>stat -c <span class="token string">&apos;%G&apos;</span> /path/to/your/file<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>%u     user ID of owner<br>%U     user name of owner<br>%g     group ID of owner<br>%G     group name of owner</p>
+</div></div></div></div>
     </main>
   </div>
 

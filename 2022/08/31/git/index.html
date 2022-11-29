@@ -74,6 +74,8 @@ ssh-keygen -t rsa -C <span class="token string">&quot;xxx@xxx.com&quot;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> checkout -b feature/b origin/master
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> checkout --track origin/main
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </div></div><div class="h3-section"><h3 id="detele-local-branch"><a href="#detele-local-branch" class="headerlink" title="detele local branch"></a>detele local branch</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> branch -d <span class="token operator">&lt;</span>branch-name<span class="token operator">&gt;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </div></div><div class="h3-section"><h3 id="delete-remote-branch"><a href="#delete-remote-branch" class="headerlink" title="delete remote branch"></a>delete remote branch</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> push origin --delete <span class="token operator">&lt;</span>branch-name<span class="token operator">&gt;</span>
