@@ -72,6 +72,12 @@ adb unstall -k <span class="token operator">&lt;</span>package-name<span class="
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 </div></div><div class="h3-section"><h3 id="&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;"><a href="#&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;" class="headerlink" title="&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;"></a>&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash">adb shell pm <span class="token function">clear</span> <span class="token operator">&lt;</span>package-name<span class="token operator">&gt;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</div></div><div class="h3-section"><h3 id="&#x6587;&#x4EF6;&#x4F20;&#x8F93;"><a href="#&#x6587;&#x4EF6;&#x4F20;&#x8F93;" class="headerlink" title="&#x6587;&#x4EF6;&#x4F20;&#x8F93;"></a>&#x6587;&#x4EF6;&#x4F20;&#x8F93;</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x4F20;&#x8F93;&#x5230;&#x624B;&#x673A;</span>
+adb push C:\Users\Mahoo12138\Desktop\test.zip /storage/sdcard
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x4F20;&#x8F93;&#x5230; PC</span>
+adb pull /system/priv-app/DeviceTest/DeviceTest.apk C:\Users\Administrator\Desktop\
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 </div></div><div class="h3-section"><h3 id="&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;-ADB"><a href="#&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;-ADB" class="headerlink" title="&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5; ADB"></a>&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5; ADB</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x540C;&#x4E00;&#x5C40;&#x57DF;&#x7F51;&#x4E0B;&#xFF0C;&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x7EBF;</span>
 adb tcpip 5555
 <span class="token comment" spellcheck="true"># &#x62D4;&#x9664;&#x6570;&#x636E;&#x7EBF;</span>
