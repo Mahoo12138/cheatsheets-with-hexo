@@ -59,31 +59,44 @@
       data-js-anchors
       role="main"
     >
-      <div class="h2-section"><h2 id="get-started"><a href="#get-started" class="headerlink local-anchor anchor" title="get started">#</a>get started</h2><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h4-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h4-section"><h4 id="yarn"><a href="#yarn" class="headerlink" title="yarn"></a>yarn</h4><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x67E5;&#x8BE2;&#x6E90;</span>
+      <div class="h2-section"><h2 id="get-started"><a href="#get-started" class="headerlink local-anchor anchor" title="get started">#</a>get started</h2><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h4-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h4-section"><h4 id="Yarn"><a href="#Yarn" class="headerlink" title="Yarn"></a>Yarn</h4><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x67E5;&#x8BE2;&#x6E90;</span>
 yarn config get registry
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<span class="token comment" spellcheck="true"># &#x5220;&#x9664;</span>
+yarn config delete registry
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x66F4;&#x6362;&#x56FD;&#x5185;&#x6E90;</span>
 yarn config <span class="token keyword">set</span> registry https://registry.npmmirror.com
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x6062;&#x590D;&#x5B98;&#x65B9;&#x6E90;</span>
+<span class="token comment" spellcheck="true"># &#x6062;&#x590D;&#x5B98;&#x65B9;&#x6E90;</span>
 yarn config <span class="token keyword">set</span> registry https://registry.yarnpkg.com
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x5220;&#x9664;&#x6CE8;&#x518C;&#x8868;</span>
-yarn config delete registry
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x6DFB;&#x52A0;&#x4EE3;&#x7406;</span>
+yarn config <span class="token keyword">set</span> proxy http://127.0.0.1:7890
+yarn config <span class="token keyword">set</span> https-proxy http://127.0.0.1:7890
+<span class="token comment" spellcheck="true"># &#x5220;&#x9664;&#x4EE3;&#x7406;</span>
+yarn config delete proxy
+yarn config delete https-proxy
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </div></div><div class="h4-section"><h4 id="Npm"><a href="#Npm" class="headerlink" title="Npm"></a>Npm</h4><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x67E5;&#x8BE2;&#x6E90;</span>
 <span class="token function">npm</span> config get registry
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<span class="token comment" spellcheck="true"># &#x5220;&#x9664;&#x6E90;</span>
+<span class="token function">npm</span> config delete registry
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x66F4;&#x6362;&#x56FD;&#x5185;&#x6E90;</span>
 <span class="token function">npm</span> config <span class="token keyword">set</span> registry https://registry.npmmirror.com
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x6062;&#x590D;&#x5B98;&#x65B9;&#x6E90;</span>
+<span class="token comment" spellcheck="true"># &#x6062;&#x590D;&#x5B98;&#x65B9;&#x6E90;</span>
 <span class="token function">npm</span> config <span class="token keyword">set</span> registry https://registry.npmjs.org
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x5220;&#x9664;&#x6CE8;&#x518C;&#x8868;</span>
-<span class="token function">npm</span> config delete registry
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x6DFB;&#x52A0;&#x4EE3;&#x7406;</span>
+<span class="token function">npm</span> config <span class="token keyword">set</span> proxy http://127.0.0.1:7890
+<span class="token function">npm</span> config <span class="token keyword">set</span> https-proxy http://127.0.0.1:7890
+<span class="token comment" spellcheck="true"># &#x5220;&#x9664;&#x4EE3;&#x7406;</span>
+<span class="token function">npm</span> config delete proxy
+<span class="token function">npm</span> config delete https-proxy
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>&#x6CE8;&#x610F; npm &#x66F4;&#x6362;&#x56FD;&#x5185;&#x955C;&#x50CF;&#x6E90;&#x4E4B;&#x540E;&#xFF0C;&#x5C06;&#x65E0;&#x6CD5;&#x518D;&#x4F7F;&#x7528; <code>npm search</code> &#x547D;&#x4EE4;&#xFF0C;&#x9700;&#x8981;&#x6062;&#x590D;&#x4E3A;&#x5B98;&#x65B9;&#x6E90;&#x624D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x6062;&#x590D;&#x5B98;&#x65B9;&#x6E90;&#x540E;&#x8FD8;&#x4E0D;&#x53EF;&#x4F7F;&#x7528;&#xFF0C;&#x8FD0;&#x884C;&#x5220;&#x9664;&#x6CE8;&#x518C;&#x8868;&#x547D;&#x4EE4;&#x540E;&#x91CD;&#x8BD5;&#x5373;&#x53EF;&#x3002;</p>
+</div></div><div class="h4-section"><h4 id="Pnpm"><a href="#Pnpm" class="headerlink" title="Pnpm"></a>Pnpm</h4><div class="body"><pre class="line-numbers language-bash"><code class="language-bash">pnpm config <span class="token keyword">set</span> global-bin-dir <span class="token string">&quot;D:\Cache\.pnpm-store&quot;</span>
+pnpm config <span class="token keyword">set</span> cache-dir <span class="token string">&quot;D:\Cache\.pnpm-store\cache&quot;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 </div></div></div><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h3-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h3-section"><h3 id="Yarn-Workspace-v1"><a href="#Yarn-Workspace-v1" class="headerlink" title="Yarn Workspace - v1"></a>Yarn Workspace - v1</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x5728;&#x6307;&#x5B9A;&#x7684; workspace &#x4E0B;&#x6267;&#x884C;&#x547D;&#x4EE4;</span>
 yarn workspace <span class="token operator">&lt;</span>workspace_name<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>command<span class="token operator">&gt;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
