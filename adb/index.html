@@ -59,39 +59,39 @@
       data-js-anchors
       role="main"
     >
-      <div class="h2-section"><h2 id="get-started"><a href="#get-started" class="headerlink local-anchor anchor" title="get started">#</a>get started</h2></div><div class="h2-section"><h2 id="adb"><a href="#adb" class="headerlink local-anchor anchor" title="adb">#</a>adb</h2><p>&#x8BE6;&#x7EC6;&#x547D;&#x4EE4;&#x67E5;&#x770B; Google &#x5B98;&#x65B9; Guide&#xFF1A;<a target="_blank" rel="noopener" href="https://developer.android.google.cn/studio/command-line/adb#issuingcommands">https://developer.android.google.cn/studio/command-line/adb#issuingcommands</a></p>
-<div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h3-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h3-section"><h3 id="&#x5B89;&#x88C5;-App"><a href="#&#x5B89;&#x88C5;-App" class="headerlink" title="&#x5B89;&#x88C5; App"></a>&#x5B89;&#x88C5; App</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x8986;&#x76D6;&#x5B89;&#x88C5;</span>
-adb <span class="token function">install</span> <span class="token operator">&lt;</span>apk file<span class="token operator">&gt;</span> -r
-<span class="token comment" spellcheck="true"># &#x5B89;&#x88C5;&#x5230;sdcard</span>
-adb <span class="token function">install</span> <span class="token operator">&lt;</span>apk file<span class="token operator">&gt;</span> -s
-<span class="token comment" spellcheck="true"># &#x5141;&#x8BB8;&#x964D;&#x7EA7;&#x8986;&#x76D6;&#x5B89;&#x88C5;</span>
-adb <span class="token function">install</span> <span class="token operator">&lt;</span>apk file<span class="token operator">&gt;</span> -d
+      <h2 id="adb"><a href="#adb" class="headerlink" title="adb"></a>adb</h2><p>详细命令查看 Google 官方 Guide：<a target="_blank" rel="noopener" href="https://developer.android.google.cn/studio/command-line/adb#issuingcommands">https://developer.android.google.cn/studio/command-line/adb#issuingcommands</a></p>
+<h3 id="安装-App"><a href="#安装-App" class="headerlink" title="安装 App"></a>安装 App</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 覆盖安装</span>
+adb <span class="token function">install</span> <span class="token operator">&lt;</span>apk file<span class="token operator">></span> -r
+<span class="token comment" spellcheck="true"># 安装到sdcard</span>
+adb <span class="token function">install</span> <span class="token operator">&lt;</span>apk file<span class="token operator">></span> -s
+<span class="token comment" spellcheck="true"># 允许降级覆盖安装</span>
+adb <span class="token function">install</span> <span class="token operator">&lt;</span>apk file<span class="token operator">></span> -d
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</div></div><div class="h3-section"><h3 id="&#x5378;&#x8F7D;-App"><a href="#&#x5378;&#x8F7D;-App" class="headerlink" title="&#x5378;&#x8F7D; App"></a>&#x5378;&#x8F7D; App</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># -k &#x53C2;&#x6570;&#x4E3A;&#x662F;&#x5426;&#x4FDD;&#x7559;&#x6570;&#x636E;&#x548C;&#x7F13;&#x5B58;</span>
-adb unstall -k <span class="token operator">&lt;</span>package-name<span class="token operator">&gt;</span>
+<h3 id="卸载-App"><a href="#卸载-App" class="headerlink" title="卸载 App"></a>卸载 App</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># -k 参数为是否保留数据和缓存</span>
+adb unstall -k <span class="token operator">&lt;</span>package-name<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-</div></div><div class="h3-section"><h3 id="&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;"><a href="#&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;" class="headerlink" title="&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;"></a>&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash">adb shell pm <span class="token function">clear</span> <span class="token operator">&lt;</span>package-name<span class="token operator">&gt;</span>
+<h3 id="清除应用数据与缓存"><a href="#清除应用数据与缓存" class="headerlink" title="清除应用数据与缓存"></a>清除应用数据与缓存</h3><pre class="line-numbers language-bash"><code class="language-bash">adb shell pm <span class="token function">clear</span> <span class="token operator">&lt;</span>package-name<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</div></div></div><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h5-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h5-section"><h5 id="&#x6587;&#x4EF6;&#x4F20;&#x8F93;"><a href="#&#x6587;&#x4EF6;&#x4F20;&#x8F93;" class="headerlink" title="&#x6587;&#x4EF6;&#x4F20;&#x8F93;"></a>&#x6587;&#x4EF6;&#x4F20;&#x8F93;</h5><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x4F20;&#x8F93;&#x5230;&#x624B;&#x673A;</span>
+<h5 id="文件传输"><a href="#文件传输" class="headerlink" title="文件传输"></a>文件传输</h5><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 传输到手机</span>
 adb push C:\Users\Mahoo12138\Desktop\test.zip /storage/sdcard
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x4F20;&#x8F93;&#x5230; PC</span>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 传输到 PC</span>
 adb pull /system/priv-app/DeviceTest/DeviceTest.apk C:\Users\Administrator\Desktop\
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-</div></div></div><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h3-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h3-section"><h3 id="&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;-ADB"><a href="#&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;-ADB" class="headerlink" title="&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5; ADB"></a>&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5; ADB</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x540C;&#x4E00;&#x5C40;&#x57DF;&#x7F51;&#x4E0B;&#xFF0C;&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x7EBF;</span>
+<h3 id="远程连接-ADB"><a href="#远程连接-ADB" class="headerlink" title="远程连接 ADB"></a>远程连接 ADB</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 同一局域网下，连接数据线</span>
 adb tcpip 5555
-<span class="token comment" spellcheck="true"># &#x62D4;&#x9664;&#x6570;&#x636E;&#x7EBF;</span>
-adb connect <span class="token operator">&lt;</span>device_ip_address<span class="token operator">&gt;</span>
+<span class="token comment" spellcheck="true"># 拔除数据线</span>
+adb connect <span class="token operator">&lt;</span>device_ip_address<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-</div></div><div class="h3-section"><h3 id="&#x67E5;&#x770B;IP&#x5730;&#x5740;"><a href="#&#x67E5;&#x770B;IP&#x5730;&#x5740;" class="headerlink" title="&#x67E5;&#x770B;IP&#x5730;&#x5740;"></a>&#x67E5;&#x770B;IP&#x5730;&#x5740;</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># interface name for example: wlan0</span>
-adb shell <span class="token function">ifconfig</span> <span class="token operator">&lt;</span>interface_name<span class="token operator">&gt;</span>
+<h3 id="查看IP地址"><a href="#查看IP地址" class="headerlink" title="查看IP地址"></a>查看IP地址</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># interface name for example: wlan0</span>
+adb shell <span class="token function">ifconfig</span> <span class="token operator">&lt;</span>interface_name<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-</div></div></div><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h4-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h4-section"><h4 id="&#x7F51;&#x7EDC;&#x4EE3;&#x7406;"><a href="#&#x7F51;&#x7EDC;&#x4EE3;&#x7406;" class="headerlink" title="&#x7F51;&#x7EDC;&#x4EE3;&#x7406;"></a>&#x7F51;&#x7EDC;&#x4EE3;&#x7406;</h4><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x8BBE;&#x7F6E;&#x4EE3;&#x7406;</span>
-adb shell settings put global http_proxy <span class="token operator">&lt;</span>ip:port<span class="token operator">&gt;</span>
-<span class="token comment" spellcheck="true"># &#x5173;&#x95ED;&#x4EE3;&#x7406;</span>
+<h4 id="网络代理"><a href="#网络代理" class="headerlink" title="网络代理"></a>网络代理</h4><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 设置代理</span>
+adb shell settings put global http_proxy <span class="token operator">&lt;</span>ip:port<span class="token operator">></span>
+<span class="token comment" spellcheck="true"># 关闭代理</span>
 adb shell settings put global http_proxy :0
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-</div></div></div></div>
+
     </main>
   </div>
 

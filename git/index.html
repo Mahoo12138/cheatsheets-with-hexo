@@ -59,77 +59,79 @@
       data-js-anchors
       role="main"
     >
-      <div class="h2-section"><h2 id="get-started"><a href="#get-started" class="headerlink local-anchor anchor" title="get started">#</a>get started</h2></div><div class="h2-section"><h2 id="Get-Start"><a href="#Get-Start" class="headerlink local-anchor anchor" title="Get Start">#</a>Get Start</h2><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h3-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h3-section"><h3 id="user-config"><a href="#user-config" class="headerlink" title="user config"></a>user config</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> config --global user.name <span class="token string">&quot;xxx&quot;</span>
-<span class="token function">git</span> config --global user.email <span class="token string">&quot;xxx&quot;</span>
+      <h2 id="Get-Start"><a href="#Get-Start" class="headerlink" title="Get Start"></a>Get Start</h2><h3 id="user-config"><a href="#user-config" class="headerlink" title="user config"></a>user config</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> config --global user.name <span class="token string">"xxx"</span>
+<span class="token function">git</span> config --global user.email <span class="token string">"xxx"</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h6 id="Set-default-editor"><a href="#Set-default-editor" class="headerlink" title="Set default editor"></a>Set default editor</h6><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> config --global core.editor <span class="token string">&quot;vim&quot;</span>
+<h6 id="Set-default-editor"><a href="#Set-default-editor" class="headerlink" title="Set default editor"></a>Set default editor</h6><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> config --global core.editor <span class="token string">"vim"</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</div></div><div class="h3-section"><h3 id="link-remote-repo"><a href="#link-remote-repo" class="headerlink" title="link remote repo"></a>link remote repo</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x751F;&#x6210; ssh &#x5BC6;&#x94A5;</span>
-ssh-keygen -t rsa -C <span class="token string">&quot;xxx@xxx.com&quot;</span>
+<h3 id="link-remote-repo"><a href="#link-remote-repo" class="headerlink" title="link remote repo"></a>link remote repo</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 生成 ssh 密钥</span>
+ssh-keygen -t rsa -C <span class="token string">"xxx@xxx.com"</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x68C0;&#x67E5;&#x8FDE;&#x63A5;</span>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 检查连接</span>
 <span class="token function">ssh</span> -T git@xxx.com
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-</div></div></div></div><div class="h2-section"><h2 id="Commit"><a href="#Commit" class="headerlink local-anchor anchor" title="Commit">#</a>Commit</h2><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h3-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h3-section"><h3 id="amend-commit-date"><a href="#amend-commit-date" class="headerlink" title="amend commit date"></a>amend commit date</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> commit --amend --date<span class="token operator">=</span><span class="token string">&quot;2024-01-26T09:51:07&quot;</span>
+<h2 id="Commit"><a href="#Commit" class="headerlink" title="Commit"></a>Commit</h2><h3 id="amend-commit-date"><a href="#amend-commit-date" class="headerlink" title="amend commit date"></a>amend commit date</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> commit --amend --date<span class="token operator">=</span><span class="token string">"2024-01-26T09:51:07"</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</div></div></div></div><div class="h2-section"><h2 id="Branch"><a href="#Branch" class="headerlink local-anchor anchor" title="Branch">#</a>Branch</h2><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h3-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h3-section"><h3 id="create-new-branch"><a href="#create-new-branch" class="headerlink" title="create new branch"></a>create new branch</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> checkout -b feature/a
+<h2 id="Branch"><a href="#Branch" class="headerlink" title="Branch"></a>Branch</h2><h3 id="create-new-branch"><a href="#create-new-branch" class="headerlink" title="create new branch"></a>create new branch</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> checkout -b feature/a
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> checkout -b feature/b origin/master
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> checkout --track origin/main
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</div></div><div class="h3-section"><h3 id="detele-local-branch"><a href="#detele-local-branch" class="headerlink" title="detele local branch"></a>detele local branch</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> branch -d <span class="token operator">&lt;</span>branch-name<span class="token operator">&gt;</span>
+<h3 id="detele-local-branch"><a href="#detele-local-branch" class="headerlink" title="detele local branch"></a>detele local branch</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> branch -d <span class="token operator">&lt;</span>branch-name<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</div></div><div class="h3-section"><h3 id="delete-remote-branch"><a href="#delete-remote-branch" class="headerlink" title="delete remote branch"></a>delete remote branch</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> push origin --delete <span class="token operator">&lt;</span>branch-name<span class="token operator">&gt;</span>
+<h3 id="delete-remote-branch"><a href="#delete-remote-branch" class="headerlink" title="delete remote branch"></a>delete remote branch</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> push origin --delete <span class="token operator">&lt;</span>branch-name<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</div></div><div class="h3-section"><h3 id="rename-local-branch"><a href="#rename-local-branch" class="headerlink" title="rename local branch"></a>rename local branch</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> branch -m oldName newName
+<h3 id="rename-local-branch"><a href="#rename-local-branch" class="headerlink" title="rename local branch"></a>rename local branch</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> branch -m oldName newName
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</div></div><div class="h3-section"><h3 id="rename-remote-branch"><a href="#rename-remote-branch" class="headerlink" title="rename remote branch"></a>rename remote branch</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x91CD;&#x547D;&#x540D;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x5BF9;&#x5E94;&#x7684;&#x672C;&#x5730;&#x5206;&#x652F;</span>
+<h3 id="rename-remote-branch"><a href="#rename-remote-branch" class="headerlink" title="rename remote branch"></a>rename remote branch</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 重命名远程分支对应的本地分支</span>
 <span class="token function">git</span> branch -m oldName newName
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x5220;&#x9664;&#x8FDC;&#x7A0B;&#x5206;&#x652F;</span>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 删除远程分支</span>
 <span class="token function">git</span> push --delete origin oldName
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x4E0A;&#x4F20;&#x65B0;&#x547D;&#x540D;&#x7684;&#x672C;&#x5730;&#x5206;&#x652F;</span>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 上传新命名的本地分支</span>
 <span class="token function">git</span> push origin newName
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x628A;&#x4FEE;&#x6539;&#x7684;&#x672C;&#x5730;&#x5206;&#x652F;&#x4E0E;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x5173;&#x8054;</span>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 把修改的本地分支与远程分支关联</span>
 <span class="token function">git</span> branch --set-upstream-to origin/newName
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-</div></div><div class="h3-section"><h3 id="unset-upstream"><a href="#unset-upstream" class="headerlink" title="unset upstream"></a>unset upstream</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> branch --unset-upstream
+<h3 id="unset-upstream"><a href="#unset-upstream" class="headerlink" title="unset upstream"></a>unset upstream</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> branch --unset-upstream
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</div></div></div></div><div class="h2-section"><h2 id="Sync"><a href="#Sync" class="headerlink local-anchor anchor" title="Sync">#</a>Sync</h2><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h3-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h3-section"><h3 id="sync-the-upstream"><a href="#sync-the-upstream" class="headerlink" title="sync the upstream"></a>sync the upstream</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x4F5C;&#x4E3A;&#x4E0A;&#x6E38;&#x4ED3;&#x5E93;</span>
-<span class="token function">git</span> remote add upstream <span class="token operator">&lt;</span>upstream-url<span class="token operator">&gt;</span>
-<span class="token comment" spellcheck="true"># &#x63D0;&#x4EA4;&#x6216;&#x6682;&#x5B58;&#x4FEE;&#x6539; </span>
+<h2 id="Sync"><a href="#Sync" class="headerlink" title="Sync"></a>Sync</h2><h3 id="sync-the-upstream"><a href="#sync-the-upstream" class="headerlink" title="sync the upstream"></a>sync the upstream</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 添加一个远程分支作为上游仓库</span>
+<span class="token function">git</span> remote add upstream <span class="token operator">&lt;</span>upstream-url<span class="token operator">></span>
+<span class="token comment" spellcheck="true"># 提交或暂存修改 </span>
 <span class="token function">git</span> commit / <span class="token function">git</span> stash
-<span class="token comment" spellcheck="true"># &#x62C9;&#x53D6;&#x4E0A;&#x6E38;&#x5206;&#x652F;&#x6539;&#x52A8;</span>
+<span class="token comment" spellcheck="true"># 拉取上游分支改动</span>
 <span class="token function">git</span> fetch upstream
-<span class="token comment" spellcheck="true"># &#x5207;&#x6362;&#x5230;&#x4E3B;&#x5206;&#x652F;</span>
+<span class="token comment" spellcheck="true"># 切换到主分支</span>
 <span class="token function">git</span> checkout master
-<span class="token comment" spellcheck="true"># &#x5C06;&#x4E0A;&#x6E38;&#x5206;&#x652F;&#x6539;&#x52A8;&#x5408;&#x5E76;&#x5230;&#x672C;&#x5730;&#x4E3B;&#x5206;&#x652F;</span>
+<span class="token comment" spellcheck="true"># 将上游分支改动合并到本地主分支</span>
 <span class="token function">git</span> merge upstream/master
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</div></div><div class="h3-section"><h3 id="replace-remote-repo"><a href="#replace-remote-repo" class="headerlink" title="replace remote repo"></a>replace remote repo</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># &#x5220;&#x9664;&#x5F53;&#x524D;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x5173;&#x8054;</span>
+<h3 id="replace-remote-repo"><a href="#replace-remote-repo" class="headerlink" title="replace remote repo"></a>replace remote repo</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 删除当前远程仓库关联</span>
 <span class="token function">git</span> remote <span class="token function">rm</span> origin
-<span class="token comment" spellcheck="true"># &#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;</span>
+<span class="token comment" spellcheck="true"># 添加新的远程仓库</span>
 <span class="token function">git</span> remote add origin <span class="token punctuation">[</span>repo-url<span class="token punctuation">]</span>
-<span class="token comment" spellcheck="true"># &#x9A8C;&#x8BC1;&#x66F4;&#x6539;</span>
+<span class="token comment" spellcheck="true"># 验证更改</span>
 <span class="token function">git</span> remote -v 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</div></div></div></div><div class="h2-section"><h2 id="Tag"><a href="#Tag" class="headerlink local-anchor anchor" title="Tag">#</a>Tag</h2><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h3-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h3-section"><h3 id="create-new-tag"><a href="#create-new-tag" class="headerlink" title="create new tag"></a>create new tag</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"> <span class="token function">git</span> tag v1.0.0
+<h2 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h2><h3 id="create-new-tag"><a href="#create-new-tag" class="headerlink" title="create new tag"></a>create new tag</h3><pre class="line-numbers language-bash"><code class="language-bash"> <span class="token function">git</span> tag v1.0.0
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</div></div><div class="h3-section"><h3 id="rename-a-tag"><a href="#rename-a-tag" class="headerlink" title="rename a tag"></a>rename a tag</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"> <span class="token comment" spellcheck="true"># &#x57FA;&#x4E8E;&#x65E7;&#x6807;&#x7B7E;&#x521B;&#x5EFA;&#x65B0;&#x6807;&#x7B7E;</span>
- <span class="token function">git</span> tag <span class="token operator">&lt;</span>new-tag-name<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>old-tag-name<span class="token operator">&gt;</span>
- <span class="token comment" spellcheck="true"># &#x5220;&#x9664;&#x65E7;&#x7684;&#x6807;&#x7B7E;</span>
- <span class="token function">git</span> tag -d <span class="token operator">&lt;</span>old-tag-name<span class="token operator">&gt;</span>
- <span class="token comment" spellcheck="true"># &#x540C;&#x6B65;&#x5230;&#x8FDC;&#x7A0B;&#x5206;&#x652F;</span>
- <span class="token function">git</span> push origin :refs/tags/<span class="token operator">&lt;</span>old-tag-name<span class="token operator">&gt;</span>
+<h3 id="rename-a-tag"><a href="#rename-a-tag" class="headerlink" title="rename a tag"></a>rename a tag</h3><pre class="line-numbers language-bash"><code class="language-bash"> <span class="token comment" spellcheck="true"># 基于旧标签创建新标签</span>
+ <span class="token function">git</span> tag <span class="token operator">&lt;</span>new-tag-name<span class="token operator">></span> <span class="token operator">&lt;</span>old-tag-name<span class="token operator">></span>
+ <span class="token comment" spellcheck="true"># 删除旧的标签</span>
+ <span class="token function">git</span> tag -d <span class="token operator">&lt;</span>old-tag-name<span class="token operator">></span>
+ <span class="token comment" spellcheck="true"># 同步到远程分支</span>
+ <span class="token function">git</span> push origin :refs/tags/<span class="token operator">&lt;</span>old-tag-name<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</div></div><div class="h3-section"><h3 id="sync-tag-to-remote"><a href="#sync-tag-to-remote" class="headerlink" title="sync tag to remote"></a>sync tag to remote</h3><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"> <span class="token function">git</span> push origin --tags
+<h3 id="sync-tag-to-remote"><a href="#sync-tag-to-remote" class="headerlink" title="sync tag to remote"></a>sync tag to remote</h3><pre class="line-numbers language-bash"><code class="language-bash"> <span class="token function">git</span> push origin --tags
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</div></div></div></div><div class="h2-section"><h2 id="Ignore"><a href="#Ignore" class="headerlink local-anchor anchor" title="Ignore">#</a>Ignore</h2><div class="code-section-list" data-isotope="{&quot;itemSelector&quot;:&quot;.h4-section&quot;,&quot;masonry&quot;:{&quot;horizontalOrder&quot;:true},&quot;transitionDuration&quot;:0}"><div class="h4-section"><h4 id="global-ignore"><a href="#global-ignore" class="headerlink" title="global ignore"></a>global ignore</h4><div class="body"><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> config --global core.excludesfile ~/.gitignore
+<h2 id="Config"><a href="#Config" class="headerlink" title="Config"></a>Config</h2><h4 id="global-ignore"><a href="#global-ignore" class="headerlink" title="global ignore"></a>global ignore</h4><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> config --global core.excludesfile ~/.gitignore
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</div></div></div></div>
+<h2 id="Log"><a href="#Log" class="headerlink" title="Log"></a>Log</h2><h5 id="Get-all-commit"><a href="#Get-all-commit" class="headerlink" title="Get all commit"></a>Get all commit</h5><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> log --author<span class="token operator">=</span><span class="token string">"your@email.com"</span> --since<span class="token operator">=</span><span class="token string">"2023-06-01"</span> --until<span class="token operator">=</span><span class="token string">"2024-12-31"</span> --pretty<span class="token operator">=</span>format:<span class="token string">"%s"</span> <span class="token operator">|</span> <span class="token function">grep</span> -v -E <span class="token string">"Merge (branch|pull request)"</span> <span class="token operator">></span> commits.txt
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
     </main>
   </div>
 
